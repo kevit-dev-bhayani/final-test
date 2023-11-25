@@ -1,0 +1,33 @@
+### get all
+GET http://localhost:3000/users
+
+### getById
+GET http://localhost:3000/users/id/656188d36359c7eb980f97ce
+
+### getByaddress
+GET http://localhost:3000/users/address/xyz
+
+### post user
+
+POST http://localhost:3000/users/new
+content-type: application/json
+
+{
+    "name": "b",
+    "address":"abc",
+    "email": "b@gmail.com",
+    "phoneNumber": 12345678690,
+    "preferredLanguage": "eng"
+
+}
+
+### update user with id
+PATCH http://localhost:3000/users/update/65618bb334c866ae42b637b7
+content-type: application/json
+
+{
+    "address":"xyz"
+}
+
+###delete by id
+DELETE  http://localhost:3000/users/65618bb334c866ae42b637b7

@@ -1,0 +1,33 @@
+### get all
+GET http://localhost:3000/address
+
+
+### getById
+GET http://localhost:3000/address/id/65618f231a6ca262a86f6803
+
+
+### post address
+
+POST http://localhost:3000/address/new
+content-type: application/json
+
+{
+    "street": "a",
+    "area":"abc",
+    "city": "x",
+    "zipcode": 123456,
+    "state": "asd"
+}
+
+
+### update address by id
+PATCH http://localhost:3000/address/update/65618f231a6ca262a86f6803
+content-type: application/json
+
+{
+    "city":"plm"
+}
+
+
+###delete by id
+DELETE  http://localhost:3000/address/65618f231a6ca262a86f6803
